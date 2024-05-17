@@ -36,6 +36,10 @@ filtered by vendor IDs between 8 and 10 (inclusive) using either:
 */
 -- option 1
 
+SELECT *, quantity*cost_to_customer_per_qty as price
+FROM customer_purchases
+WHERE vendor_id >= 8 
+AND vendor_id <= 10
 
 -- option 2
 
